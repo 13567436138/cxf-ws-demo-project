@@ -1,0 +1,1 @@
+wsdl2java -encoding utf-8 -d F:\IdeaProjects\dream-webservice\wsdl2javatest http://localhost:8080/server/web-publish?wsdl

@@ -1,0 +1,24 @@
+<service name="helloWorld">
+    <description>
+        simple spring example
+    </description>
+    <parameter name="ServiceObjectSupplier">org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier</parameter>
+    <parameter name="SpringBeanName">helloWorldImpl</parameter>
+    <parameter name="sayHello">
+   		<messageReceiver  class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		<messageReceiver  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </parameter>
+</service> 
+
+ 
+ <!-- <service name="helloWorld" >
+	<description>
+		Please Type your service description here
+	</description>
+	<parameter name="sayHello">
+		<messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+		<messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver" />
+	</parameter>
+	<parameter name="ServiceObjectSupplier">org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier</parameter>
+    <parameter name="SpringBeanName">helloWorldImpl</parameter>
+</service> -->
